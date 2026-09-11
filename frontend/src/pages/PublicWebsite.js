@@ -4,7 +4,7 @@ import '../styles/PublicWebsite.css';
 
 const PublicWebsite = () => {
   const navigate = useNavigate();
-  const [activeSection, setActiveSection] = useState('home');
+  const [, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId) => {
@@ -390,15 +390,6 @@ const PublicWebsite = () => {
                   <h3>Office Hours</h3>
                   <p>Monday - Saturday: 8:00 AM - 4:00 PM</p>
                 </div>
-              </div>
-            </div>
-            <div className="social-links">
-              <h3>Follow Us</h3>
-              <div className="social-icons">
-                <a href="#" className="social-icon"><i className="fab fa-facebook"></i></a>
-                <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-                <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
-                <a href="#" className="social-icon"><i className="fab fa-youtube"></i></a>
               </div>
             </div>
           </div>

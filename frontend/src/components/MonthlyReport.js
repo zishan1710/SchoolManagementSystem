@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { reportAPI } from '../services/api';
 import '../styles/Management.css';
 
@@ -9,11 +9,9 @@ const MonthlyReport = () => {
   const [loading, setLoading] = useState(false);
   const [showClassWise, setShowClassWise] = useState(false);
 
-  useEffect(() => {
-    fetchReports();
-  }, []);
+  
 
-  const fetchReports = async () => {
+  const fetchReports = useCallback(async () => {
     try {
       setLoading(true);
       const monthlyRes = await reportAPI.getMonthlyReport(reportMonth);
@@ -26,7 +24,7 @@ const MonthlyReport = () => {
     } finally {
       setLoading(false);
     }
-  };
+  });
 
   const handleMonthChange = (e) => {
     setReportMonth(e.target.value);

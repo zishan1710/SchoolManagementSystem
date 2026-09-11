@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Dashboard.css';
 import StudentManagement from '../components/StudentManagement';
 import FinanceUserManagement from '../components/FinanceUserManagement';

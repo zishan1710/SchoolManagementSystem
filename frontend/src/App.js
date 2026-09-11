@@ -13,8 +13,8 @@ import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [userRole, setUserRole] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [userRole, setUserRole] = useState(null);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
