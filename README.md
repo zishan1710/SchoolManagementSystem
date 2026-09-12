@@ -451,5 +451,5 @@ This project is provided as-is for educational purposes.
 ---
 
 **Version**: 1.0.0  
-**Last Updated**: September 2024  
-**Maintainer**: Development Team
+**Last Updated**: September 2026 
+**Maintainer**: Md Zishan
